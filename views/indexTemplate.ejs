@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <a href="/new" class="active">New Message</a>
+    </div>
+    <div class="container">
+        <% messages.forEach((message) => { %>
+            <div class="message">
+                <ul>
+                    <li> Posted by: <%= message.user %> </li>
+                    <li> On: <%= message.added %> </li>
+                    <li> <%= message.text %> </li>
+                </ul>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
