@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  background-color: aliceblue;
 }
 
 /* 6. Improve media defaults */
@@ -63,10 +64,84 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .message {
-    background-color: lightsteelblue;
+    background-color: white;
     width: 500px;
     padding: 10px 20px;
+    border-radius: 10px;
+    border: 3px solid darkblue;
 }
+
+header {
+  background-color: darkblue;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Space out items */
+  align-items: center; /* Vertically align items */
+}
+
+header nav ul {
+  list-style: none; /* Remove bullet points from list */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange navigation items horizontally */
+}
+
+header nav ul li {
+  margin-left: 20px; /* Space between navigation items */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.5em;
+}
+
+header nav ul li a:hover {
+  color: #ccc; /* Lighter color on hover */
+}
+
+li#date{
+  margin-bottom: 5px;
+  color: gray;
+}
+li#username{
+  color: gray;
+}
+li#message {
+  font-size: larger;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+#newMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items:flex-start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 3px solid darkblue;
+}
+
+textarea#message{
+  width: 600px;
+  height: 100px;
+  font-size: 16pt;
+  resize: vertical;
+}
+
+h2 {
+  text-align: center;
+}
+

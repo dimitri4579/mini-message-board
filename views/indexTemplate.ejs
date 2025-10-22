@@ -7,16 +7,21 @@
     <title>Index</title>
 </head>
 <body>
-    <div>
-        <a href="/new" class="active">New Message</a>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="/" class="active">Messages</a> </li>
+                <li> <a href="/new" class="active">Post A New Message</a> </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <% messages.forEach((message) => { %>
             <div class="message">
                 <ul>
-                    <li> Posted by: <%= message.user %> </li>
-                    <li> On: <%= message.added %> </li>
-                    <li> <%= message.text %> </li>
+                    <li id="username"> Posted by: <%= message.user %> </li>
+                    <li id="date"> On: <%= message.added %> </li>
+                    <li id="message"> <%= message.text %> </li>
                 </ul>
             </div>
         <% }) %>

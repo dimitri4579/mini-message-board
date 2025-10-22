@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="/" class="active">Messages</a> </li>
+                <li> <a href="/new" class="active">Post A New Message</a> </li>
+            </ul>
+        </nav>
+    </header>
     <h2>Post new message!</h2>
-    <form action="/new" method="POST" >
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-        <label for="message">Message:</label>
-        <input type="text" name="message" id="message" required>
-        <button type="submit">Submit</button>
-    </form>
+
+    <div class="form-container">
+        <form action="/new" method="POST" id="newMessage">
+            
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="message">Message:</label>
+            <textarea type="text" name="message" id="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
