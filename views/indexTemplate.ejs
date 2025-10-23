@@ -19,9 +19,9 @@
         <% messages.forEach((message) => { %>
             <div class="message">
                 <ul>
-                    <li id="username"> Posted by: <%= message.user %> </li>
-                    <li id="date"> On: <%= message.added %> </li>
-                    <li id="message"> <%= message.text %> </li>
+                    <li id="username"> Posted by: <%= message.username %> </li>
+                    <li id="date"> On: <%= message.date_posted %> </li>
+                    <li id="message"> <%= message.message_post %> </li>
                 </ul>
             </div>
         <% }) %>
